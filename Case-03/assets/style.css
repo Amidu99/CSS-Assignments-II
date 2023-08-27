@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+:root {
+    --box-width: 120px;
+    --box-height: 55px;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+section>div{
+    width: var(--box-width);
+    height: var(--box-height);
+    border-radius: 10px;
+    background-color: #0000ff;
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes my-animation {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    25% {
+        margin-top: 0;
+        margin-left: calc(100vw - var(--box-width));
+        transform: rotate(180deg);
+        background-color: #ffff00;
+    }
+    50% {
+        margin-top: calc(100vh - var(--box-height));
+        margin-left: calc(100vw - var(--box-width));
+        transform: rotate(0);
+        background-color: #FE0000;
+    }
+    75% {
+        margin-top: calc(100vh - var(--box-height));
+        margin-left: 0;
+        transform: rotate(180deg);
+        background-color: #ff1493;
+    }
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(0);
+        background-color: #ffA500;
+    }
+}
