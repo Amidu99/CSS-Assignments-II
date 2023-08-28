@@ -66,6 +66,12 @@ img:nth-child(5){
         transform: translateX(-2100px);
     }
 }
+@media all and (max-aspect-ratio: 5/2) {
+    img:nth-child(4),
+    img:nth-child(5) {
+        bottom: 15.5%;
+    }
+}
 @media all and (max-aspect-ratio: 16/9) {
     img:nth-child(4),
     img:nth-child(5) {
