@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #3d8df1;
 }
 :root {
     --box-width: 120px;
